@@ -1,8 +1,10 @@
 package kr.co.tjoeun.lifecycle_20201114
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity() {
 
@@ -17,6 +19,14 @@ class MainActivity : BaseActivity() {
 
 
     override fun setupEvents() {
+
+        moveBtn.setOnClickListener {
+
+            val myIntent = Intent(mContext, OtherActivity::class.java)
+            startActivity(myIntent)
+
+        }
+
 
     }
 
