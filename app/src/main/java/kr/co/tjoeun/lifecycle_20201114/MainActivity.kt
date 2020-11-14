@@ -2,6 +2,7 @@ package kr.co.tjoeun.lifecycle_20201114
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 
 class MainActivity : BaseActivity() {
 
@@ -10,6 +11,8 @@ class MainActivity : BaseActivity() {
         setContentView(R.layout.activity_main)
         setupEvents()
         setValues()
+
+        Log.d("메인화면", "onCreate 실행")
     }
 
 
